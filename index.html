@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>THE NAME SURNAME - Coming Soon</title>
+    <link rel="icon" type="image/x-icon" href="assets/thexcrowd_icon.ico" />
+
+    <!-- Bootstrap (4.3.1 version) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome icons (free version)-->
+
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <script src="https://kit.fontawesome.com/912a476cb6.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+    <!-- Background Video-->
+    <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/mp4/0001-0025.webm" type="video/mp4" />
+    </video>
+
+    <!-- mainthread---->
+    <div class="mainthread">
+        <div class="mainthread-content text-white">
+            <div class="container-fluid px-4 px-lg-0">
+                <h1 class="fst-italic lh-1 mb-4" style="font-weight: 700;font-style: italic">The <span
+                        style="color:#ff8800">XYZ</span>
+                    Name is Coming Soon</h1>
+                <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive
+                    updates and to be notified when we launch!</p>
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+
+
+
+                        <div class="col">
+                            <input class="form-control" id="email" type="email" placeholder="Enter email address..."
+                                maxLength="64" aria-label="Enter email address..." />
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-secondary" onclick="buttonAfterSubmition(); return false"
+                                id="submitButton" type="submit" disabled>Notify
+                                Me!</button>
+                        </div>
+
+
+                    </div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            You should receive shortly a verification email on your mailbox!
+                            <br />
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3 mt-2">Error - Invalid email format</div>
+                    </div>
+                    <div class="form-check mt-3">
+
+
+
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                            onclick="buttonShow()">
+
+
+
+                        <label class=" form-check-label" for="flexCheckDefault">
+                            By signing up, you agree to our <a href="">Privacy Policy</a> and <a href="">Terms of
+                                Use</a>.
+                        </label>
+
+
+
+                        <p class="showMoreClicker" onclick="showMore()" style="font-size:16px; margin-bottom: 0px;">Read
+                            More
+                        </p>
+                        <p class="showMoreText" style="display: none; font-size:16px;">Our policies
+                            explain how we
+                            use
+                            your
+                            data to
+                            deliver, improve, and
+                            promote our service and
+                            our site, and how you can exercise your rights to control that use.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
+            <a style="text-decoration: none; background-color: #ff8800;" class="icons btn m-3" target="_blank"
+                href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a style="text-decoration: none; background-color: #ff8800;" class="icons btn m-3" target="_blank"
+                href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a style="text-decoration: none; background-color: #ff8800;" class="icons btn m-3" target="_blank"
+                href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+</body>
+
+</html>
